@@ -24,7 +24,6 @@ class CreateUsersTable extends Migration
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('role');
-            $table->string('photo')->default(Qs::getDefaultUserImage());
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
