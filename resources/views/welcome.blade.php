@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,37 +10,37 @@
     <title>Admin Dashboard</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}">
 
     <!-- plugins:css -->
-    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
     
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
-    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/jvectormap/jquery-jvectormap.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel-2/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel-2/owl.theme.default.min.css') }}">
 
   
     <!-- Layout styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   </head>
 
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">       
+          <a class="sidebar-brand brand-logo" href="index.html"><img src="{{ asset('assets/images/logo.svg') }}" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="{{ asset('assets/images/logo-mini.svg') }}" alt="logo" /></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
             <div class="profile-desc">
               <div class="profile-pic">
                 <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
+                  <img class="img-xs rounded-circle " src="{{ asset('assets/images/faces/face15.jpg') }}" alt="">
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
@@ -254,7 +254,7 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ asset('assets/images/logo-mini.svg') }}" alt="logo" /></a>
           </div>
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -282,8 +282,8 @@
                   <h6 class="p-3 mb-0">Messages</h6>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                    <div class="preview-thumbnail">                    
+                      <img src="{{ asset('assets/images/faces/face4.jpg') }}" alt="image" class="rounded-circle profile-pic">
                     </div>
                     <div class="preview-item-content">
                       <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
@@ -292,8 +292,8 @@
                   </a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                    <div class="preview-thumbnail">                    
+                      <img src="{{ asset('assets/images/faces/face2.jpg') }}" alt="image" class="rounded-circle profile-pic">
                     </div>
                     <div class="preview-item-content">
                       <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
@@ -302,8 +302,8 @@
                   </a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <img src="assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                    <div class="preview-thumbnail">                    
+                      <img src="{{ asset('assets/images/faces/face3.jpg') }}" alt="image" class="rounded-circle profile-pic">
                     </div>
                     <div class="preview-item-content">
                       <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
@@ -363,8 +363,8 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
-                  <div class="navbar-profile">
-                    <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt="">
+                  <div class="navbar-profile">                  
+                    <img class="img-xs rounded-circle" src="{{ asset('assets/images/faces/face15.jpg') }}" alt="image">
                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
@@ -710,8 +710,8 @@
                                 </label>
                               </div>
                             </td>
-                            <td>
-                              <img src="assets/images/faces/face1.jpg" alt="image" />
+                            <td>                            
+                              <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="image" />
                               <span class="pl-2">Henry Klein</span>
                             </td>
                             <td> 02312 </td>
@@ -720,7 +720,7 @@
                             <td> Credit card </td>
                             <td> 04 Dec 2019 </td>
                             <td>
-                              <div class="badge badge-outline-success">Approved</div>
+                              <div class="badge badge-outline-success">Approuvé</div>
                             </td>
                           </tr>
                           <tr>
@@ -731,8 +731,8 @@
                                 </label>
                               </div>
                             </td>
-                            <td>
-                              <img src="assets/images/faces/face2.jpg" alt="image" />
+                            <td>                            
+                              <img src="{{ asset('assets/images/faces/face2.jpg') }}" alt="image" />
                               <span class="pl-2">Estella Bryan</span>
                             </td>
                             <td> 02312 </td>
@@ -752,8 +752,8 @@
                                 </label>
                               </div>
                             </td>
-                            <td>
-                              <img src="assets/images/faces/face5.jpg" alt="image" />
+                            <td>                            
+                              <img src="{{ asset('assets/images/faces/face5.jpg') }}" alt="image" />
                               <span class="pl-2">Lucy Abbott</span>
                             </td>
                             <td> 02312 </td>
@@ -762,7 +762,7 @@
                             <td> Credit card </td>
                             <td> 04 Dec 2019 </td>
                             <td>
-                              <div class="badge badge-outline-danger">Rejected</div>
+                              <div class="badge badge-outline-danger">Rejeté</div>
                             </td>
                           </tr>
                           <tr>
@@ -773,8 +773,8 @@
                                 </label>
                               </div>
                             </td>
-                            <td>
-                              <img src="assets/images/faces/face3.jpg" alt="image" />
+                            <td>                            
+                              <img src="{{ asset('assets/images/faces/face3.jpg') }}" alt="image" />
                               <span class="pl-2">Peter Gill</span>
                             </td>
                             <td> 02312 </td>
@@ -783,7 +783,7 @@
                             <td> Online Payment </td>
                             <td> 04 Dec 2019 </td>
                             <td>
-                              <div class="badge badge-outline-success">Approved</div>
+                              <div class="badge badge-outline-success">Approuvé</div>
                             </td>
                           </tr>
                           <tr>
@@ -794,8 +794,8 @@
                                 </label>
                               </div>
                             </td>
-                            <td>
-                              <img src="assets/images/faces/face4.jpg" alt="image" />
+                            <td>                            
+                              <img src="{{ asset('assets/images/faces/face4.jpg') }}" alt="image" />
                               <span class="pl-2">Sallie Reyes</span>
                             </td>
                             <td> 02312 </td>
@@ -804,7 +804,7 @@
                             <td> Credit card </td>
                             <td> 04 Dec 2019 </td>
                             <td>
-                              <div class="badge badge-outline-success">Approved</div>
+                              <div class="badge badge-outline-success">Approuvé</div>
                             </td>
                           </tr>
                         </tbody>
@@ -825,7 +825,7 @@
                     <div class="preview-list">
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="{{ asset('assets/images/faces/face6.jpg') }}" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -839,7 +839,7 @@
                       </div>
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
+                          <img src="{{ asset('assets/images/faces/face8.jpg') }}" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -853,7 +853,7 @@
                       </div>
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face9.jpg" alt="image" class="rounded-circle" />
+                          <img src="{{ asset('assets/images/faces/face9.jpg') }}" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -867,7 +867,7 @@
                       </div>
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                          <img src="assets/images/faces/face11.jpg" alt="image" class="rounded-circle" />
+                          <img src="{{ asset('assets/images/faces/face11.jpg') }}" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -888,21 +888,21 @@
                   <div class="card-body">
                     <h4 class="card-title">Portfolio Slide</h4>
                     <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
-                      <div class="item">
-                        <img src="assets/images/dashboard/Rectangle.jpg" alt="">
+                      <div class="item">                      
+                        <img src="{{ asset('assets/images/dashboard/Rectangle.jpg') }}" alt="image">
                       </div>
-                      <div class="item">
-                        <img src="assets/images/dashboard/Img_5.jpg" alt="">
+                      <div class="item">                      
+                        <img src="{{ asset('assets/images/dashboard/Img_5.jpg') }}" alt="image">
                       </div>
-                      <div class="item">
-                        <img src="assets/images/dashboard/img_6.jpg" alt="">
+                      <div class="item">                      
+                        <img src="{{ asset('assets/images/dashboard/img_6.jpg') }}" alt="image">
                       </div>
                     </div>
                     <div class="d-flex py-4">
                       <div class="preview-list w-100">
                         <div class="preview-item p-0">
-                          <div class="preview-thumbnail">
-                            <img src="assets/images/faces/face12.jpg" class="rounded-circle" alt="">
+                          <div class="preview-thumbnail">                          
+                            <img src="{{ asset('assets/images/faces/face12.jpg') }}" class="rounded-circle" alt="image">
                           </div>
                           <div class="preview-item-content d-flex flex-grow">
                             <div class="flex-grow">
@@ -1049,8 +1049,7 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2023 SchoolManagement - Tous droits réservés</span>
             </div>
           </footer>
           <!-- partial -->
@@ -1061,23 +1060,30 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
-    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="{{ asset('assets/vendors/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ asset('assets/vendors/progressbar.js/progressbar.min.js') }}"></script>
+    <script src="{{ asset('assets/vendors/jvectormap/jquery-jvectormap.min.js') }}"></script>
+    <script src="{{ asset('assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
+    <script src="{{ asset('assets/vendors/owl-carousel-2/owl.carousel.min.js') }}"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="assets/js/off-canvas.js"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="assets/js/misc.js"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="assets/js/settings.js"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
     <script src="assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
   </body>
