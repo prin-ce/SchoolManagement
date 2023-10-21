@@ -57,11 +57,19 @@
             <span class="nav-link"></span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url('admin/dashboard') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-speedometer"></i>
                 </span>
                 <span class="menu-title">Tableau de bord</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">            
+            <a class="nav-link" href="{{ url('admin/admin/list') }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-account-circle"></i>
+                </span>
+                <span class="menu-title">Administrateurs</span>
             </a>
         </li>
         <li class="nav-item nav-category">
