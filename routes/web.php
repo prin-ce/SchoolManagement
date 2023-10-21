@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+|
+| Route::get('/', function () {
+|   return view('welcome');
+| });
+| 
+*/
+
+// Chemin vers la page de connexion
+Route::get('/', [AuthController::class, 'login'] );
+
 
 // Chemin vers le tableau de bord admin
 Route::get('admin/dashboard', function () {
