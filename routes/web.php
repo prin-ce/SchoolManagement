@@ -24,14 +24,15 @@ use App\Http\Controllers\AuthController;
 
 // Chemin vers la page de connexion
 Route::get('/', [AuthController::class, 'login'] );
+Route::post('login', [AuthController::class, 'AuthLogin']);
 
 
-// Chemin vers le tableau de bord admin
-Route::get('admin/dashboard', function () {
-    return view('admin.dashboard');
+// Chemin vers le tableau de bord super admin
+Route::get('supadmin/dashboard', function () {
+    return view('supadmin.dashboard');
 });
 
 // Chemin vers la liste des administrateurs
-Route::get('admin/admin/list', function () {
-    return view('admin.admin.list');
+Route::get('supadmin/supadmin/list', function () {
+    return view('supadmin.supadmin.list');
 });

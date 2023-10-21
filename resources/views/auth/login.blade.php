@@ -29,7 +29,8 @@
             <div class="card col-lg-4 mx-auto">
               <div class="card-body px-5 py-5">
                 <h3 class="card-title text-left mb-3">Connexion</h3>
-                <form>
+                <form name="frm" action="{{ url('login') }}" method="POST">
+                    {{ csrf_field() }}
                   <div class="form-group">
                     <label>Pseudo *</label>
                     <input id="loginUsername" name="loginUsername" type="text" class="form-control p_input" required>
