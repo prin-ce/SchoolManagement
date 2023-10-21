@@ -17,10 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Chemin vers le tableau de bord admin
 Route::get('admin/dashboard', function () {
     return view('admin.dashboard');
 });
 
+// Chemin vers la liste des administrateurs
 Route::get('admin/admin/list', function () {
     return view('admin.admin.list');
 });
