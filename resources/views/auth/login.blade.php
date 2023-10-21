@@ -31,12 +31,12 @@
                 <h3 class="card-title text-left mb-3">Connexion</h3>
                 <form>
                   <div class="form-group">
-                    <label>Pseudo ou Email *</label>
-                    <input type="text" class="form-control p_input">
+                    <label>Pseudo *</label>
+                    <input id="loginUsername" name="loginUsername" type="text" class="form-control p_input" required>
                   </div>
                   <div class="form-group">
                     <label>Mot de passe *</label>
-                    <input type="text" class="form-control p_input">
+                    <input id="loginPassword" name="loginPassword" type="password" class="form-control p_input" required>
                   </div>
                   <div class="form-group d-flex align-items-center justify-content-between">
                     <div class="form-check">
@@ -46,7 +46,7 @@
                     <a href="#" class="forgot-pass">Mot de passe oublié ?</a>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn-block enter-btn">Se connecter</button>
+                    <button name="login_button" type="submit" class="btn btn-primary btn-block enter-btn">Se connecter</button>
                   </div>
                 </form>
               </div>
