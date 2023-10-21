@@ -33,6 +33,6 @@ Route::get('supadmin/dashboard', function () {
 });
 
 // Chemin vers la liste des administrateurs
-Route::get('supadmin/supadmin/list', function () {
-    return view('supadmin.supadmin.list');
+Route::get('supadmin/admin/list', function () {
+    return view('supadmin.admin.list');
 });

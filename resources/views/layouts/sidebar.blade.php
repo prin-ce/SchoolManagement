@@ -57,7 +57,7 @@
             <span class="nav-link"></span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ url('admin/dashboard') }}">
+            <a class="nav-link" href="{{ url('supadmin/dashboard') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-speedometer"></i>
                 </span>
@@ -65,7 +65,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">            
-            <a class="nav-link" href="{{ url('admin/admin/list') }}">
+            <a class="nav-link" href="{{ url('supadmin/admin/list') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-account-circle"></i>
                 </span>
